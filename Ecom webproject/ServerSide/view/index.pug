@@ -1,0 +1,11 @@
+html
+  body
+    h1 hello world!
+
+    link(rel="stylesheet", type="text/css" href="/static/css/index.css")
+    div.product_list
+        each product in products
+            div #{product.name}
+            div #{product.description}
+            div: img(src=product.imageUrl)
+            div #{product.price}
